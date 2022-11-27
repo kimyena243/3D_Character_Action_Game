@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     bool isJump;
     Ray ray;
     RaycastHit hit;
-    bool isGet;
+
 
     void Start()
     {
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         Move();
         Jump();
         Click();
-        Get();
+        //Get();
     }
     private void LookAround()
     {
@@ -83,29 +83,50 @@ public class Player : MonoBehaviour
     }
     void Click()
     {
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+      
         if (Input.GetMouseButtonDown(0))
         {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
+           
+            animator.SetBool("isGet", true);
+            animator.SetTrigger("doGet");
+
+            if (Physics.Raycast(ray, out hit, 30))
             {
+               
                 if (hit.transform.gameObject.tag == "Recipe")
                 {
                     Debug.Log("ss");
                 }
             }
         }
-    }
-    void Get()
-    {
-       
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(1))
         {
-            animator.SetBool("isGet", true);
-            animator.SetTrigger("doGet");
-            isGet = true;
+            animator.SetBool("isAttack", true);
+            animator.SetTrigger("doAttack");
+
+            if (Physics.Raycast(ray, out hit, 30))
+            {
+                if (hit.transform.gameObject.tag == "Monster")
+                {
+                  
+
+                    Debug.Log("monster");
+                }
+            }
         }
-        
     }
+    //void Get()
+    //{
+       
+    //    if (Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        animator.SetBool("isGet", true);
+    //        animator.SetTrigger("doGet");
+
+    //    }
+        
+    //}
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Floor")

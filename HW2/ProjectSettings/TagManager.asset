@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Floor
   - Recipe
+  - Monster
+  - Hand
   layers:
   - Default
   - TransparentFX

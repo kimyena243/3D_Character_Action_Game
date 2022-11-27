@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 437120}
   - component: {fileID: 3392782}
   - component: {fileID: 2370392}
-  - component: {fileID: 6424312}
+  - component: {fileID: -1108876559400746996}
   m_Layer: 0
   m_Name: fence_half.000
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6424312
-MeshCollider:
+--- !u!65 &-1108876559400746996
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +94,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 23638cd09901be240b48f50e0e56559a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.4335158, y: 1.0889887, z: 0.11416621}
+  m_Center: {x: 0.65967476, y: 0.54449433, z: 0}
