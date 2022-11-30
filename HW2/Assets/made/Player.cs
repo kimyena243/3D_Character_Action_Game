@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         Move();
         Jump();
         Click();
-        //Get();
+      
     }
     private void LookAround()
     {
@@ -97,6 +97,11 @@ public class Player : MonoBehaviour
                 if (hit.transform.gameObject.tag == "Recipe")
                 {
                     Debug.Log("ss");
+                   
+                }
+                if (hit.transform.gameObject.tag == "Food")
+                {
+                    Destroy(hit.transform.gameObject);
                 }
             }
         }
@@ -107,32 +112,24 @@ public class Player : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 30))
             {
-                if (hit.transform.gameObject.tag == "Monster")
-                {
-                  
-
-                    Debug.Log("monster");
-                }
+                //if (hit.transform.gameObject.tag == "Monster")
+                //{
+                //    Debug.Log("monster");
+                //}
             }
         }
     }
-    //void Get()
-    //{
-       
-    //    if (Input.GetKeyDown(KeyCode.E))
-    //    {
-    //        animator.SetBool("isGet", true);
-    //        animator.SetTrigger("doGet");
-
-    //    }
-        
-    //}
+  
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Floor")
         {
             animator.SetBool("isJump", false);
             isJump = false;
+        }
+        if (collision.gameObject.tag == "BlueMon")
+        {
+            Debug.Log("oh");
         }
     }
 }

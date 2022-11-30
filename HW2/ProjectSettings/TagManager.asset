@@ -8,6 +8,9 @@ TagManager:
   - Recipe
   - Monster
   - Hand
+  - Food
+  - Manager
+  - BlueMon
   layers:
   - Default
   - TransparentFX
