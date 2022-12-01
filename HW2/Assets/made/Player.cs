@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
             animator.SetBool("isAttack", true);
             animator.SetTrigger("doAttack");
             weapon.GetComponent<CapsuleCollider>().enabled = true;
-            Invoke("ClickFalse", 1.0f);
+            Invoke("ClickFalse", 1.5f);
             if (Physics.Raycast(ray, out hit, 30))
             {
                 //if (hit.transform.gameObject.tag == "Monster")
