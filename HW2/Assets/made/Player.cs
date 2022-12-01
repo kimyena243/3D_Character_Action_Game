@@ -21,13 +21,15 @@ public class Player : MonoBehaviour
     bool isJump;
     Ray ray;
     RaycastHit hit;
-
+    public GameObject weapon;
+    public float jumpSpeed;
 
     void Start()
     {
         //characterController = GetComponent<CharacterController>();
         rig = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>(); // Animator ÄÄÆ÷³ÍÆ® °¡Á®¿È
+        
     }
     void Update()
     { 
@@ -40,6 +42,7 @@ public class Player : MonoBehaviour
     private void LookAround()
     {
         Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+    
         Vector3 camAngle = cameraArm.rotation.eulerAngles;
 
         //Ãß°¡
@@ -75,7 +78,7 @@ public class Player : MonoBehaviour
         jDown = Input.GetButtonDown("Jump");
         if (jDown && !isJump)
         {
-            rig.AddForce(Vector3.up * 15, ForceMode.Impulse);
+            rig.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             animator.SetBool("isJump", true);
             animator.SetTrigger("doJump");
             isJump = true;
@@ -109,7 +112,8 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isAttack", true);
             animator.SetTrigger("doAttack");
-
+            weapon.GetComponent<CapsuleCollider>().enabled = true;
+            Invoke("ClickFalse", 1.0f);
             if (Physics.Raycast(ray, out hit, 30))
             {
                 //if (hit.transform.gameObject.tag == "Monster")
@@ -118,8 +122,12 @@ public class Player : MonoBehaviour
                 //}
             }
         }
+      
     }
-  
+    void ClickFalse()
+    {
+        weapon.GetComponent<CapsuleCollider>().enabled = false;
+    }
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Floor")

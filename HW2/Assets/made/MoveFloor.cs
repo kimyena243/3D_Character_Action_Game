@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlueMonster : MonoBehaviour
+public class MoveFloor : MonoBehaviour
 {
-    Animator animator;
     public bool isX;
     public bool isZ;
     public float speed;
-
+   
     public float maxX;
     public float minX;
     public float maxZ;
     public float minZ;
     float xPosition; //현재 위치(x) 저장
     float zPosition; //현재 위치(x) 저장
+    float yPosition; //현재 위치(x) 저장
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        yPosition = transform.position.y;
         xPosition = transform.position.x;
         zPosition = transform.position.z;
     }
@@ -32,7 +32,7 @@ public class BlueMonster : MonoBehaviour
 
     void XMove()
     {
-        if( isX == true)
+        if (isX == true)
         {
             xPosition += Time.deltaTime * speed;
 
@@ -43,21 +43,19 @@ public class BlueMonster : MonoBehaviour
 
                 xPosition = maxX;
 
-                gameObject.transform.rotation = Quaternion.Euler(0, 270, 0);
 
             }
-         
+
             else if (xPosition <= minX)
 
             {
-              speed *= -1;
+                speed *= -1;
 
-              xPosition = minX;
+                xPosition = minX;
 
-               gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
 
             }
-            transform.position = new Vector3(xPosition, 3, zPosition);
+            transform.position = new Vector3(xPosition, yPosition, zPosition);
         }
 
     }
@@ -74,7 +72,7 @@ public class BlueMonster : MonoBehaviour
 
                 zPosition = maxZ;
 
-                gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+         
 
             }
 
@@ -86,11 +84,10 @@ public class BlueMonster : MonoBehaviour
 
                 zPosition = minZ;
 
-                gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+             
 
             }
-            transform.position = new Vector3(xPosition, 3, zPosition);
+            transform.position = new Vector3(xPosition, yPosition, zPosition);
         }
     }
-
 }
