@@ -11,6 +11,7 @@ TagManager:
   - Food
   - Manager
   - BlueMon
+  - Boom
   layers:
   - Default
   - TransparentFX
