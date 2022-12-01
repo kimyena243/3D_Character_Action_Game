@@ -70,3 +70,156 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+HW2/Assets/EffectExamples.meta
+HW2/Assets/EffectExamples/Blood.meta
+HW2/Assets/EffectExamples/Blood/Materials.meta
+HW2/Assets/EffectExamples/Blood/Materials/BloodPoolParticle.mat
+HW2/Assets/EffectExamples/Blood/Materials/BloodPoolParticle.mat.meta
+HW2/Assets/EffectExamples/Blood/Materials/BloodSplashParticle.mat
+HW2/Assets/EffectExamples/Blood/Materials/BloodSplashParticle.mat.meta
+HW2/Assets/EffectExamples/Blood/Materials/BloodSplatParticle.mat
+HW2/Assets/EffectExamples/Blood/Materials/BloodSplatParticle.mat.meta
+HW2/Assets/EffectExamples/Blood/Materials/BloodStreamParticle.mat
+HW2/Assets/EffectExamples/Blood/Materials/BloodStreamParticle.mat.meta
+HW2/Assets/EffectExamples/Blood/Prefabs.meta
+HW2/Assets/EffectExamples/Blood/Prefabs/BloodSprayEffect.prefab
+HW2/Assets/EffectExamples/Blood/Prefabs/BloodSprayEffect.prefab.meta
+HW2/Assets/EffectExamples/Blood/Prefabs/BloodStreamEffect.prefab
+HW2/Assets/EffectExamples/Blood/Prefabs/BloodStreamEffect.prefab.meta
+HW2/Assets/EffectExamples/Blood/Textures.meta
+HW2/Assets/EffectExamples/Blood/Textures/BloodDropAlbedo.tif
+HW2/Assets/EffectExamples/Blood/Textures/BloodDropAlbedo.tif.meta
+HW2/Assets/EffectExamples/Blood/Textures/BloodDropNormals.tif
+HW2/Assets/EffectExamples/Blood/Textures/BloodDropNormals.tif.meta
+HW2/Assets/EffectExamples/Blood/Textures/BloodPoolAlbedo.tif
+HW2/Assets/EffectExamples/Blood/Textures/BloodPoolAlbedo.tif.meta
+HW2/Assets/EffectExamples/Blood/Textures/BloodPoolNormals.tif
+HW2/Assets/EffectExamples/Blood/Textures/BloodPoolNormals.tif.meta
+HW2/Assets/EffectExamples/Blood/Textures/BloodSprayNormals.tif
+HW2/Assets/EffectExamples/Blood/Textures/BloodSprayNormals.tif.meta
+HW2/Assets/EffectExamples/Blood/Textures/BloodStreamAlbedo.tif
+HW2/Assets/EffectExamples/Blood/Textures/BloodStreamAlbedo.tif.meta
+HW2/Assets/EffectExamples/Editor.meta
+HW2/Assets/EffectExamples/Editor/PackageManagerAssembly.meta
+HW2/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageImportList.txt
+HW2/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageImportList.txt.meta
+HW2/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll
+HW2/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll.meta
+HW2/Assets/EffectExamples/FireExplosionEffects.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/EmbersParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/EmbersParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/FlameParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/FlameParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/FlameRoundYellowParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/FlameRoundYellowParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/LightningParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/LightningParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaExplosionParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaExplosionParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaFireParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaFireParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/ShockWaveParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/ShockWaveParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeDarkParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeDarkParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeLightParticle.mat
+HW2/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeLightParticle.mat.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/BigExplosionEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/BigExplosionEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/DrippingFlames.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/DrippingFlames.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesEffects.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesEffects.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesParticleEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesParticleEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlameThrowerEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlameThrowerEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/PlasmaExplosionEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/PlasmaExplosionEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/RibbonSmoke.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/RibbonSmoke.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmallExplosionEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmallExplosionEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmokeEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmokeEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/TorchEffect.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/TorchEffect.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/WallFlames.prefab
+HW2/Assets/EffectExamples/FireExplosionEffects/Prefabs/WallFlames.prefab.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/DebrisParticleSheet.png
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/DebrisParticleSheet.png.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/FlameParticleSheet.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/FlameParticleSheet.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundGreyParticleSheet.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundGreyParticleSheet.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundParticleSheet.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundParticleSheet.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/LightningParticle.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/LightningParticle.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/RoundSoftParticle.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/RoundSoftParticle.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffNormalSheet.tif
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffNormalSheet.tif.meta
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffParticleSheet.png
+HW2/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffParticleSheet.png.meta
+HW2/Assets/EffectExamples/Misc Effects.meta
+HW2/Assets/EffectExamples/Misc Effects/Materials.meta
+HW2/Assets/EffectExamples/Misc Effects/Materials/DustMoteParticle.mat
+HW2/Assets/EffectExamples/Misc Effects/Materials/DustMoteParticle.mat.meta
+HW2/Assets/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat
+HW2/Assets/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat.meta
+HW2/Assets/EffectExamples/Misc Effects/Materials/Spark2Particle.mat
+HW2/Assets/EffectExamples/Misc Effects/Materials/Spark2Particle.mat.meta
+HW2/Assets/EffectExamples/Misc Effects/Materials/SparkParticle.mat
+HW2/Assets/EffectExamples/Misc Effects/Materials/SparkParticle.mat.meta
+HW2/Assets/EffectExamples/Misc Effects/Prefabs.meta
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/DustMotesEffect.prefab
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/DustMotesEffect.prefab.meta
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/ElectricalSparksEffect.prefab
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/ElectricalSparksEffect.prefab.meta
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/SandSwirlsEffect.prefab
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/SandSwirlsEffect.prefab.meta
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/SparksEffect.prefab
+HW2/Assets/EffectExamples/Misc Effects/Prefabs/SparksEffect.prefab.meta
+HW2/Assets/EffectExamples/Misc Effects/Textures.meta
+HW2/Assets/EffectExamples/Misc Effects/Textures/DustMoteParticle.png
+HW2/Assets/EffectExamples/Misc Effects/Textures/DustMoteParticle.png.meta
+HW2/Assets/EffectExamples/Misc Effects/Textures/SparkParticle.tif
+HW2/Assets/EffectExamples/Misc Effects/Textures/SparkParticle.tif.meta
+HW2/Assets/EffectExamples/Profiles.meta
+HW2/Assets/EffectExamples/Profiles/EffectsProfile.asset
+HW2/Assets/EffectExamples/Profiles/EffectsProfile.asset.meta
+HW2/Assets/EffectExamples/Readme.asset
+HW2/Assets/EffectExamples/Readme.asset.meta
+HW2/Assets/EffectExamples/Scenes.meta
+HW2/Assets/EffectExamples/Scenes/Menu.meta
+HW2/Assets/EffectExamples/Scenes/Menu.unity
+HW2/Assets/EffectExamples/Scenes/Menu.unity.meta
+HW2/Assets/EffectExamples/Scenes/Menu/LightingData.asset
+HW2/Assets/EffectExamples/Scenes/Menu/LightingData.asset.meta
+HW2/Assets/EffectExamples/Scenes/Menu/ReflectionProbe-0.exr
+HW2/Assets/EffectExamples/Scenes/Menu/ReflectionProbe-0.exr.meta
+HW2/Assets/EffectExamples/Scenes/Menu/ReflectionProbe-1.exr
+HW2/Assets/EffectExamples/Scenes/Menu/ReflectionProbe-1.exr.meta
+HW2/Assets/EffectExamples/Shared.meta
+HW2/Assets/EffectExamples/Shared/Animation.meta
+HW2/Assets/EffectExamples/Shared/Animation/Animations.meta
+HW2/Assets/EffectExamples/Shared/Animation/Animations/GunFire.anim
+HW2/Assets/EffectExamples/Shared/Animation/Animations/GunFire.anim.meta
+HW2/Assets/EffectExamples/Shared/Animation/Animations/GunIdle.anim
+HW2/Assets/EffectExamples/Shared/Animation/Animations/GunIdle.anim.meta
+HW2/Assets/EffectExamples/Shared/Animation/Controllers.meta
+HW2/Assets/EffectExamples/Shared/Animation/Controllers/Gun.controller
+HW2/Assets/EffectExamples/Shared/Animation/Controllers/Gun.controller.meta
+HW2/Assets/EffectExamples/Shared/Fonts.meta
+HW2/Assets/EffectExamples/Shared/Fonts/Roboto-Thin.ttf
+HW2/Assets/EffectExamples/Shared/Fonts/Roboto-Thin.ttf.meta
