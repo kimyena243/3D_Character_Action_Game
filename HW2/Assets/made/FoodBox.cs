@@ -22,7 +22,7 @@ public class FoodBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Hand"))
         {
             Debug.Log("음식생성");
-            Instantiate(food, new Vector3(transform.position.x, 5.0f, transform.position.z), Quaternion.identity); 
+            Instantiate(food, new Vector3(transform.position.x, 8.0f, transform.position.z), Quaternion.identity); 
 
             Destroy(gameObject); //자기 자신을 지웁니다.
 

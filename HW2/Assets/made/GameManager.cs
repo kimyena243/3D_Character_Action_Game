@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     BoxCollider rangeCollider;
     public int max = 0;
 
-    public GameObject cherry;
+    public GameObject food;
     private void Awake()
     {
         rangeCollider = rangeObject.GetComponent<BoxCollider>();
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         if(monsterNum == 0)
         {
             Debug.Log("¥Ÿ¡÷±›");
-            cherry.SetActive(true);
+            food.SetActive(true);
         }
     }
 

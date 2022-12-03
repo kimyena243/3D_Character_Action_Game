@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
       
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
            
             animator.SetBool("isGet", true);
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
                 }
             }
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             animator.SetBool("isAttack", true);
             animator.SetTrigger("doAttack");
