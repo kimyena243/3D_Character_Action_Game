@@ -97,7 +97,7 @@ public class FoodMade : MonoBehaviour
             hamberger[0] = false;
             particle = false;
         }
-        if (pizza[0] == true && pizza[1] == true && pizza[2] == true&& particle == true)
+        if (pizza[0] == true && pizza[1] == true && pizza[2] == true&& particle == true )
         {
             Instantiate(pizzaPref, new Vector3(transform.position.x, 11.0f, transform.position.z), Quaternion.identity);
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);

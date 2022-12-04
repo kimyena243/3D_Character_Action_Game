@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4569579032089079064}
   - component: {fileID: -224598464012129808}
   - component: {fileID: 5286076119656596238}
+  - component: {fileID: -9062355871333570848}
   m_Layer: 0
   m_Name: ham
   m_TagString: Untagged
@@ -114,3 +115,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.32999545, y: 0.22794202, z: 0.33720574}
   m_Center: {x: -3.1554436e-29, y: 0.000000074505806, z: 0}
+--- !u!114 &-9062355871333570848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569579032086885336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e2083aa1fc8120499c36cf00927fd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 0ce66d82e4bd77949b171514ae3d67d6, type: 2}

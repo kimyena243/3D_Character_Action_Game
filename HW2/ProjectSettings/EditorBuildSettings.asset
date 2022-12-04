@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Clear.unity
+    guid: f4b0a62818a2b8e43b49b9bc554e175d
+  - enabled: 1
+    path: Assets/Scenes/GameOverTime.unity
+    guid: aee2d2050680f7141a6bb7ec3fb15ec8
+  - enabled: 1
+    path: Assets/Scenes/GameOverAnother.unity
+    guid: 0a101764ec2dd744d86c39363471c568
   m_configObjects: {}

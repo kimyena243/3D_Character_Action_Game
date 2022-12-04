@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     RaycastHit hit;
     public GameObject weapon;
     public float jumpSpeed;
-
+    public GameObject hand;
     void Start()
     {
         //characterController = GetComponent<CharacterController>();
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         Move();
         Jump();
         Click();
-      
+        run();
     }
     private void LookAround()
     {
@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
         animator.SetBool("isMove", isMove);
         if (isMove)
         {
+            
             Vector3 lookForward = new Vector3(cameraArm.forward.x, 0f, cameraArm.forward.z).normalized;
             Vector3 lookRight = new Vector3(cameraArm.right.x, 0f, cameraArm.right.z).normalized;
             Vector3 moveDir = lookForward * moveInput.y + lookRight * moveInput.x;
@@ -82,6 +83,19 @@ public class Player : MonoBehaviour
             animator.SetBool("isJump", true);
             animator.SetTrigger("doJump");
             isJump = true;
+        }
+    }
+    void run()
+    {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            animator.SetBool("isrun",true);
+            speed = 15.0f;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            animator.SetBool("isrun", false);
+            speed = 11.0f;
         }
     }
     void Click()
@@ -102,9 +116,13 @@ public class Player : MonoBehaviour
                     Debug.Log("ss");
                    
                 }
-                if (hit.transform.gameObject.tag == "Food")
+                if (hit.transform.gameObject.tag == "Goal")
                 {
-                    Destroy(hit.transform.gameObject);
+                    hit.transform.position = new Vector3(-0.074f, -0.152f, 0);
+                    hit.transform.localScale = new Vector3(1, 1, 1);
+                    hit.transform.rotation = Quaternion.Euler(0, 0, -115.875f);
+                    hit.transform.SetParent(hand.transform,false);
+                  
                 }
             }
         }

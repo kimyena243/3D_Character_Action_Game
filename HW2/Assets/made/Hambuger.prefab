@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3452844719917459218}
   - component: {fileID: 3452844719920850738}
   - component: {fileID: 3452844719919752690}
+  - component: {fileID: 8366598926621051831}
   m_Layer: 0
   m_Name: Hambuger
-  m_TagString: Untagged
+  m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &8366598926621051831
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3452844719917562674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15731634
+  m_Center: {x: 0.000000059604645, y: 0.022450514, z: -0.0020236224}

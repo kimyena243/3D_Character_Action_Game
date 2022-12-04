@@ -13,6 +13,7 @@ TagManager:
   - BlueMon
   - Boom
   - Menual
+  - Goal
   layers:
   - Default
   - TransparentFX
