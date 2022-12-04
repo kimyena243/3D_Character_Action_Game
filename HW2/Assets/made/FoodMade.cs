@@ -40,6 +40,7 @@ public class FoodMade : MonoBehaviour
                 foodNum += 1;
                 other.gameObject.SetActive(false);
                 Debug.Log(food[0].name);
+                Destroy(other.gameObject);
             }
 
         }

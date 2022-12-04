@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     BoxCollider rangeCollider;
     public int max = 0;
 
+    public bool isFood = true;
+
     public GameObject food;
     private void Awake()
     {
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(RandomRespawn_Coroutine());
+
     }
 
     // Update is called once per frame
@@ -45,10 +48,14 @@ public class GameManager : MonoBehaviour
 
     void Monster()
     {
-        if(monsterNum == 0)
+        if (monsterNum == 0)
         {
-            Debug.Log("다주금");
-            food.SetActive(true);
+            if (isFood == true)
+            {
+                Debug.Log("다주금");
+                food.SetActive(true);
+                isFood = false;
+            }
         }
     }
 

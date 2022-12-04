@@ -12,6 +12,10 @@ PrefabInstance:
       value: egg
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 214315961896cb246a09ddccf67044d7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 214315961896cb246a09ddccf67044d7, type: 3}
       propertyPath: m_TagString
       value: Food
       objectReference: {fileID: 0}
@@ -120,4 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2083aa1fc8120499c36cf00927fd7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 56b326d00236c9641a7343a45be7bf09, type: 2}

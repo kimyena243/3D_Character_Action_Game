@@ -17,16 +17,19 @@ public class ActionController : MonoBehaviour
 
     [SerializeField]
     private Text actionText;  // «‡µø¿ª ∫∏ø© ¡Ÿ ≈ÿΩ∫∆Æ
+    [SerializeField]
+    private Inventory theInventory;  
 
     void Update()
     {
         CheckItem();
         TryAction();
+
     }
 
     private void TryAction()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(1))
         {
             CheckItem();
             CanPickUp();
@@ -37,7 +40,8 @@ public class ActionController : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward, out hitInfo, range, layerMask))
         {
-            if (hitInfo.transform.tag == "Item")
+            
+            if (hitInfo.transform.tag == "Food")
             {
                 ItemInfoAppear();
             }
@@ -50,7 +54,7 @@ public class ActionController : MonoBehaviour
     {
         pickupActivated = true;
         actionText.gameObject.SetActive(true);
-        actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + " »πµÊ " + "<color=yellow>" + "(E)" + "</color>";
+        actionText.text = hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + " »πµÊ ";
     }
 
     private void ItemInfoDisappear()
@@ -66,6 +70,7 @@ public class ActionController : MonoBehaviour
             if (hitInfo.transform != null)
             {
                 Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + " »πµÊ «ﬂΩ¿¥œ¥Ÿ.");  // ¿Œ∫•≈‰∏Æ ≥÷±‚
+                theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
                 Destroy(hitInfo.transform.gameObject);
                 ItemInfoDisappear();
             }

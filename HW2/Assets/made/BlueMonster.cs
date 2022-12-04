@@ -13,6 +13,7 @@ public class BlueMonster : MonoBehaviour
     public float minX;
     public float maxZ;
     public float minZ;
+    public float Y;
     float xPosition; //현재 위치(x) 저장
     float zPosition; //현재 위치(x) 저장
     // Start is called before the first frame update
@@ -57,7 +58,7 @@ public class BlueMonster : MonoBehaviour
                gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
 
             }
-            transform.position = new Vector3(xPosition, 3, zPosition);
+            transform.position = new Vector3(xPosition, Y, zPosition);
         }
 
     }
@@ -89,7 +90,7 @@ public class BlueMonster : MonoBehaviour
                 gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
             }
-            transform.position = new Vector3(xPosition, 3, zPosition);
+            transform.position = new Vector3(xPosition, Y, zPosition);
         }
     }
 

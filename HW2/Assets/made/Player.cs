@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
     public GameObject weapon;
     public float jumpSpeed;
     public GameObject hand;
+
+    public GameObject[] recipe = new GameObject[4]; 
+   
     void Start()
     {
         //characterController = GetComponent<CharacterController>();
@@ -110,12 +113,27 @@ public class Player : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 30))
             {
-               
                 if (hit.transform.gameObject.tag == "Recipe")
                 {
-                    Debug.Log("ss");
-                   
+                    if (hit.transform.gameObject.name == "manual0")
+                    {
+                        recipe[0].SetActive(true);
+                    }
+                    if (hit.transform.gameObject.name == "manual1")
+                    {
+                        recipe[1].SetActive(true);
+                    }
+                    if (hit.transform.gameObject.name == "manual2")
+                    {
+                        recipe[2].SetActive(true);
+                    }
+                    if (hit.transform.gameObject.name == "manual3")
+                    {
+                        recipe[3].SetActive(true);
+                    }
+
                 }
+
                 if (hit.transform.gameObject.tag == "Goal")
                 {
                     hit.transform.position = new Vector3(-0.074f, -0.152f, 0);
@@ -132,13 +150,7 @@ public class Player : MonoBehaviour
             animator.SetTrigger("doAttack");
             weapon.GetComponent<CapsuleCollider>().enabled = true;
             Invoke("ClickFalse", 1.5f);
-            if (Physics.Raycast(ray, out hit, 30))
-            {
-                //if (hit.transform.gameObject.tag == "Monster")
-                //{
-                //    Debug.Log("monster");
-                //}
-            }
+           
         }
       
     }
@@ -156,6 +168,13 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "BlueMon")
         {
             Debug.Log("oh");
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Finish"))
+        {
+            transform.position = new Vector3();
         }
     }
 }

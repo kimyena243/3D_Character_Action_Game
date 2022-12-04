@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6113737316613143092, guid: 90062ebe1f500f24e8ac02272f982aef, type: 3}
       propertyPath: m_Name
-      value: FoodBox
+      value: FoodBox Variant
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1747276530, guid: 90062ebe1f500f24e8ac02272f982aef, type: 3}
@@ -697,7 +697,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0.10834723, y: 0.000000019848347, z: 0.015243293}
+    m_Position: {x: 0.10834723, y: 10, z: 0.015243293}
     m_Rotation: {x: 270.60034, y: 0, z: 0}
     m_Scale: {x: 0.55816317, y: 0.2987044, z: 0.58897734}
     placementMode: 0

@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class RandomFood : MonoBehaviour
 {
-    public static bool isCake =false;
-    public static bool isHamberger=false;
-    public static bool isPizza=false;
+    public static bool isCake;
+    public static bool isHamberger;
+    public static bool isPizza;
 
     public GameObject[] foods = new GameObject[3];
 
@@ -18,15 +18,22 @@ public class RandomFood : MonoBehaviour
         if(num ==0 )
         {
             isCake = true;
-      
+            isHamberger = false;
+            isPizza = false;
+
         }
         else if(num == 1)
         {
             isHamberger = true;
+            isCake =false;
+            isPizza = false;
         }
         else if(num == 2)
         {
             isPizza = true;
+            isCake = false;
+            isHamberger = false;
+           
         }
     }
 
@@ -45,7 +52,7 @@ public class RandomFood : MonoBehaviour
         {
             if (isCake == true)
             {
-                if (other.gameObject.name == "cake")
+                if (other.gameObject.name == "cake(Clone)")
                 {
                     SceneManager.LoadScene("Clear");
                 }
@@ -56,7 +63,7 @@ public class RandomFood : MonoBehaviour
             }
             if (isHamberger == true)
             {
-                if (other.gameObject.name == "Hambuger")
+                if (other.gameObject.name == "Hambuger(Clone)")
                 {
                     SceneManager.LoadScene("Clear");
                 }
@@ -67,7 +74,7 @@ public class RandomFood : MonoBehaviour
             }
             if (isPizza == true)
             {
-                if (other.gameObject.name == "pizza")
+                if (other.gameObject.name == "pizza(Clone)")
                 {
                     SceneManager.LoadScene("Clear");
                 }

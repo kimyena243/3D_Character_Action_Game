@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1068440089637458356}
   - component: {fileID: -8887317223270883938}
   - component: {fileID: -5569408659601435390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waffle
   m_TagString: Food
   m_Icon: {fileID: 0}
