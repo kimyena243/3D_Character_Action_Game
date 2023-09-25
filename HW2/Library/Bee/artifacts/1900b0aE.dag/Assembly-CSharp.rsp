@@ -382,6 +382,7 @@
 "Assets/Scripts/RandomFood.cs"
 "Assets/Scripts/Recipe.cs"
 "Assets/Scripts/RecipeBook.cs"
+"Assets/Scripts/RecipeData.cs"
 "Assets/Scripts/Slot.cs"
 "Assets/Scripts/SponeBox.cs"
 "Assets/Supercyan Character Pack Animal People Sample/Scripts/AccessoryLogic.cs"

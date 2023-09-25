@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class Recipe : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private RecipeData recipeData;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

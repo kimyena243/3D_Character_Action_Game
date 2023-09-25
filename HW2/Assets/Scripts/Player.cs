@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
       
         if (Input.GetMouseButtonDown(1))
         {
-           
+            Debug.DrawRay(ray.origin, ray.direction * 1000, Color.blue);
             animator.SetBool("isGet", true);
             animator.SetTrigger("doGet");
 
@@ -115,6 +115,7 @@ public class Player : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag == "Recipe")
                 {
+                   
                     if (hit.transform.gameObject.name == "manual0")
                     {
                         recipe[0].SetActive(true);

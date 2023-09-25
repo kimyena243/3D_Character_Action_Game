@@ -25,13 +25,13 @@ public class ItemClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-            if (theInventory.slots[slotNum].item != null)
+
+        if (theInventory.slots[slotNum].item != null)
+        {
+            if (isName == true)
             {
-                if (isName == true)
-                {
-                    Fname[slotNum] = theInventory.slots[slotNum].item.itemName;
-               
+                Fname[slotNum] = theInventory.slots[slotNum].item.itemName;
+
                 isName = false;
             }
 
@@ -57,6 +57,7 @@ public class ItemClick : MonoBehaviour
             }
 
         }
+    
     }
     public void Click()
     {
