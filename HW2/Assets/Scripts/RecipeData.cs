@@ -7,4 +7,5 @@ public class RecipeData : ScriptableObject
 {
     [SerializeField] private string recipeName;
     [SerializeField] private Sprite recipeIcon;
+    [SerializeField] private int recipeNum;
 }
