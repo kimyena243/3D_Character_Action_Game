@@ -8,4 +8,9 @@ public class RecipeData : ScriptableObject
     [SerializeField] private string recipeName;
     [SerializeField] private Sprite recipeIcon;
     [SerializeField] private int recipeNum;
+
+    public string RecipeName { get => recipeName; }
+    public Sprite RecipeIcon { get => recipeIcon; }
+    public int RecipeNum { get => recipeNum; }
+
 }
