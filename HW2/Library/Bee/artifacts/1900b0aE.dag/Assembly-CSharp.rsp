@@ -384,6 +384,7 @@
 "Assets/Scripts/RecipeBook.cs"
 "Assets/Scripts/RecipeBookData.cs"
 "Assets/Scripts/RecipeData.cs"
+"Assets/Scripts/RecipeUI.cs"
 "Assets/Scripts/Slot.cs"
 "Assets/Scripts/SponeBox.cs"
 "Assets/Supercyan Character Pack Animal People Sample/Scripts/AccessoryLogic.cs"
