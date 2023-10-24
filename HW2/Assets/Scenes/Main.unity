@@ -30697,3 +30697,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798b6bd38c21f5e45a561a656ed3f75a, type: 3}
+--- !u!1 &6762372531621001388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6762372531085889179, guid: 798b6bd38c21f5e45a561a656ed3f75a, type: 3}
+  m_PrefabInstance: {fileID: 6762372531621001387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6762372531621001389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6762372531621001388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d0723b00bfae64186728c57d60fe48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeicon: {fileID: 0}
