@@ -15,10 +15,15 @@ public class FoodMade : MonoBehaviour
     public GameObject pizzaPref; 
     public GameObject ParticlePref;
     public bool particle = true;
+
+    //레시피 추가
+    public Recipe recipe;
+    public RecipeBookData recipeBookData;
+    [SerializeField] private RecipeBook recipebook;
     // Start is called before the first frame update
     void Start()
     {
-       
+        Debug.Log(recipe.RecipeData.RecipeName);
     }
 
     // Update is called once per frame
@@ -40,7 +45,7 @@ public class FoodMade : MonoBehaviour
                 foodNum += 1;
                 other.gameObject.SetActive(false);
                 Debug.Log(food[0].name);
-                Destroy(other.gameObject);
+               
             }
 
         }
@@ -89,6 +94,8 @@ public class FoodMade : MonoBehaviour
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);
             cake[0] = false;
             particle = false;
+            
+
         }
         if (hamberger[0] == true && hamberger[1] == true && hamberger[2] == true&& particle == true)
         {
@@ -98,13 +105,19 @@ public class FoodMade : MonoBehaviour
             hamberger[0] = false;
             particle = false;
         }
-        if (pizza[0] == true && pizza[1] == true && pizza[2] == true&& particle == true )
+        if (pizza[0] == true && pizza[1] == true && pizza[2] == true&& particle == true || Input.GetMouseButtonDown(1))//확인할려고 마우스 클릭 잠간 넣어둠
         {
             Instantiate(pizzaPref, new Vector3(transform.position.x, 11.0f, transform.position.z), Quaternion.identity);
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);
            
             pizza[0] = false;
             particle = false;
+
+
+            //음식 만들때 레시피 데이터 추가 & 유아이 변경
+            recipeBookData.Add(recipe.RecipeData);
+            Debug.Log(recipe.RecipeData.RecipeName);
+            recipebook.AcquireItem(recipe);
         }
 
 

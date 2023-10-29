@@ -11,8 +11,10 @@ public class RecipeBookData : ScriptableObject
     public void Add (RecipeData recipeData)
     {
         recipes.Add(new Recipe(recipeData));
+        Debug.Log(Recipes[0].RecipeData.RecipeName);
 
     }
    
 
 }
+       

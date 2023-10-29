@@ -18,7 +18,10 @@ public class ActionController : MonoBehaviour
     [SerializeField]
     private Text actionText;  // 행동을 보여 줄 텍스트
     [SerializeField]
-    private Inventory theInventory;  
+    private Inventory theInventory;
+
+    
+
 
     void Update()
     {
@@ -71,6 +74,7 @@ public class ActionController : MonoBehaviour
             {
                 Debug.Log(hitInfo.transform.GetComponent<ItemPickUp>().item.itemName + " 획득 했습니다.");  // 인벤토리 넣기
                 theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
+                
                 Destroy(hitInfo.transform.gameObject);
                 ItemInfoDisappear();
             }

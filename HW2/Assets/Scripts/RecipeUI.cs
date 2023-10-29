@@ -6,10 +6,13 @@ using UnityEngine.UI;
 public class RecipeUI : MonoBehaviour
 {
     [SerializeField] private Image recipeicon;
-    
+    [SerializeField] private Recipe recipe;
+    public Recipe Recipe { get => recipe; }
 
-    public void SetRecipeUI(Recipe recipe)
+    //이걸 어떻게 사용할지 생각하기
+    public void SetRecipeUI()
     {
+       
         recipeicon.sprite = recipe.RecipeData.RecipeIcon;
         
 
