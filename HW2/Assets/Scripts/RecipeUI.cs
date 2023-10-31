@@ -17,4 +17,8 @@ public class RecipeUI : MonoBehaviour
         
 
     }
+    public void Click()
+    {
+          
+    }
 }

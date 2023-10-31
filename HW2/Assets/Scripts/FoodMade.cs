@@ -18,7 +18,7 @@ public class FoodMade : MonoBehaviour
 
     //레시피 추가
     public Recipe recipe;
-    public RecipeBookData recipeBookData;
+   
     [SerializeField] private RecipeBook recipebook;
     // Start is called before the first frame update
     void Start()
@@ -115,9 +115,10 @@ public class FoodMade : MonoBehaviour
 
 
             //음식 만들때 레시피 데이터 추가 & 유아이 변경
-            recipeBookData.Add(recipe.RecipeData);
+            recipebook.RecipeBookData.Add(recipe.RecipeData);
             Debug.Log(recipe.RecipeData.RecipeName);
             recipebook.AcquireItem(recipe);
+            
         }
 
 

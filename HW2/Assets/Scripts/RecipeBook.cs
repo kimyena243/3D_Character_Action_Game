@@ -9,7 +9,7 @@ public class RecipeBook : MonoBehaviour
 
 
     [SerializeField] private RecipeBookData recipeBookData;
-   
+    public RecipeBookData RecipeBookData { get => recipeBookData; }
     [SerializeField] private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting 
 
     public RecipeUI[] slots;  // 슬롯들 배열
