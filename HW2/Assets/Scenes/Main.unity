@@ -8522,6 +8522,7 @@ MonoBehaviour:
   ParticlePref: {fileID: 2509524345160210863, guid: 865421a925464254494030c2eee1549c, type: 3}
   particle: 1
   recipe: {fileID: -8877274084135280041, guid: a77c0a81dbddb4145ae19afd5b0a2e07, type: 3}
+  recipes: {fileID: -8877274084135280041, guid: fc6dddd98fbd2ec488c87e9d0d3b067c, type: 3}
   recipebook: {fileID: 1146874967}
 --- !u!135 &620921315
 SphereCollider:

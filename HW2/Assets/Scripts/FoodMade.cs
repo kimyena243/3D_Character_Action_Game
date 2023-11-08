@@ -18,6 +18,7 @@ public class FoodMade : MonoBehaviour
 
     //레시피 추가
     public Recipe recipe;
+    public Recipe recipes;
    
     [SerializeField] private RecipeBook recipebook;
     // Start is called before the first frame update
@@ -88,28 +89,28 @@ public class FoodMade : MonoBehaviour
     }
     void SpawnFood()
     {
-       if (cake[0] == true && cake[1] == true&& cake[2] == true && particle == true)
+        if (cake[0] == true && cake[1] == true && cake[2] == true && particle == true)
         {
-            Instantiate(cakePref, new Vector3(transform.position.x,11.0f, transform.position.z), Quaternion.identity);
+            Instantiate(cakePref, new Vector3(transform.position.x, 11.0f, transform.position.z), Quaternion.identity);
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);
             cake[0] = false;
             particle = false;
-            
+
 
         }
-        if (hamberger[0] == true && hamberger[1] == true && hamberger[2] == true&& particle == true)
+        if (hamberger[0] == true && hamberger[1] == true && hamberger[2] == true && particle == true)
         {
             Instantiate(hambergerPref, new Vector3(transform.position.x, 11.0f, transform.position.z), Quaternion.identity);
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);
-          
+
             hamberger[0] = false;
             particle = false;
         }
-        if (pizza[0] == true && pizza[1] == true && pizza[2] == true&& particle == true || Input.GetMouseButtonDown(1))//확인할려고 마우스 클릭 잠간 넣어둠
+        if (pizza[0] == true && pizza[1] == true && pizza[2] == true && particle == true || Input.GetMouseButtonDown(1))//확인할려고 마우스 클릭 잠간 넣어둠
         {
             Instantiate(pizzaPref, new Vector3(transform.position.x, 11.0f, transform.position.z), Quaternion.identity);
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);
-           
+
             pizza[0] = false;
             particle = false;
 
@@ -118,10 +119,13 @@ public class FoodMade : MonoBehaviour
             recipebook.RecipeBookData.Add(recipe.RecipeData);
             Debug.Log(recipe.RecipeData.RecipeName);
             recipebook.AcquireItem(recipe);
-            
+            recipebook.AcquireItem(recipes);
+
+
+
         }
 
-
+    
     }
 
 }

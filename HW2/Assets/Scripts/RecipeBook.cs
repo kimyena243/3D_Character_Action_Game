@@ -35,5 +35,5 @@ public class RecipeBook : MonoBehaviour
         //레시피 번호 불러와서 이미지 바꾸기
         slots[_recipe.RecipeData.RecipeNum].GetComponent<Image>().sprite = _recipe.RecipeData.RecipeIcon;
 
-       }
+    }
 }

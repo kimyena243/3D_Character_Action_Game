@@ -367,6 +367,7 @@
 "Assets/Scripts/BlueMonster.cs"
 "Assets/Scripts/Boom.cs"
 "Assets/Scripts/CameraMove.cs"
+"Assets/Scripts/CookingSystem.cs"
 "Assets/Scripts/Destroy.cs"
 "Assets/Scripts/FoodBox.cs"
 "Assets/Scripts/FoodMade.cs"
