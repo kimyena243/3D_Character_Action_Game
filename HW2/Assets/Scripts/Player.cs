@@ -25,23 +25,42 @@ public class Player : MonoBehaviour
     public float jumpSpeed;
     public GameObject hand;
 
-    public GameObject[] recipe = new GameObject[4]; 
-   
+    public GameObject[] recipe = new GameObject[4];
+
+    [SerializeField]
+    private GameObject Inventory;
+    private bool isInven = false;
     void Start()
     {
         //characterController = GetComponent<CharacterController>();
         rig = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>(); // Animator 컴포넌트 가져옴
-        
+
     }
     void Update()
-    { 
+    {
         LookAround();
         Move();
         Jump();
         Click();
-        run();
+        Run();
+
+        // 인벤창
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (isInven == false)
+            {
+                Inventory.SetActive(true);
+                isInven = true;
+            }
+            else
+            {
+                Inventory.SetActive(false);
+                isInven = false;
+            }
+        }
     }
+    //화면 돌리기
     private void LookAround()
     {
         Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
@@ -88,7 +107,7 @@ public class Player : MonoBehaviour
             isJump = true;
         }
     }
-    void run()
+    void Run()
     {
         if(Input.GetKey(KeyCode.LeftShift))
         {

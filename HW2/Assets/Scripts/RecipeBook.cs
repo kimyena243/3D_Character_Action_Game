@@ -12,7 +12,7 @@ public class RecipeBook : MonoBehaviour
     public RecipeBookData RecipeBookData { get => recipeBookData; }
     [SerializeField] private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting 
 
-    public RecipeUI[] slots;  // 슬롯들 배열
+    private RecipeUI[] slots;  // 슬롯들 배열
     [SerializeField] private List<Sprite> images = new List<Sprite>();
     //ui에 잇던거
     // [SerializeField] private GameObject SlotPrefab;
@@ -30,7 +30,7 @@ public class RecipeBook : MonoBehaviour
 
     }
 
-    public void AcquireItem(Recipe _recipe)
+    public void ChangeUI(Recipe _recipe)
     {
         //레시피 번호 불러와서 이미지 바꾸기
         slots[_recipe.RecipeData.RecipeNum].GetComponent<Image>().sprite = _recipe.RecipeData.RecipeIcon;

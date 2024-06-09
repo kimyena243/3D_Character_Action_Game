@@ -21,6 +21,9 @@ public class FoodMade : MonoBehaviour
     public Recipe recipes;
    
     [SerializeField] private RecipeBook recipebook;
+
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -106,7 +109,7 @@ public class FoodMade : MonoBehaviour
             hamberger[0] = false;
             particle = false;
         }
-        if (pizza[0] == true && pizza[1] == true && pizza[2] == true && particle == true || Input.GetMouseButtonDown(1))//확인할려고 마우스 클릭 잠간 넣어둠
+        if (pizza[0] == true && pizza[1] == true && pizza[2] == true && particle == true /*|| Input.GetMouseButtonDown(1)*/)//확인할려고 마우스 클릭 잠간 넣어둠
         {
             Instantiate(pizzaPref, new Vector3(transform.position.x, 11.0f, transform.position.z), Quaternion.identity);
             Instantiate(ParticlePref, new Vector3(transform.position.x, 9.0f, transform.position.z), Quaternion.identity);
@@ -118,9 +121,8 @@ public class FoodMade : MonoBehaviour
             //음식 만들때 레시피 데이터 추가 & 유아이 변경
             recipebook.RecipeBookData.Add(recipe.RecipeData);
             Debug.Log(recipe.RecipeData.RecipeName);
-            recipebook.AcquireItem(recipe);
-            recipebook.AcquireItem(recipes);
-
+            recipebook.ChangeUI(recipe);
+            
 
 
         }

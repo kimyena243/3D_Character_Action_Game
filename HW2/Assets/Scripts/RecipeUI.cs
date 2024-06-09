@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class RecipeUI : MonoBehaviour
 {
     [SerializeField] private Image recipeicon;
@@ -12,13 +11,15 @@ public class RecipeUI : MonoBehaviour
     //이걸 어떻게 사용할지 생각하기
     public void SetRecipeUI()
     {
-       
+
         recipeicon.sprite = recipe.RecipeData.RecipeIcon;
-        
+
 
     }
     public void Click()
     {
-          
+
     }
+
+    //클릭하면 조합법 + 설명 뜨게
 }

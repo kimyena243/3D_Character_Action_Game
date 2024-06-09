@@ -5,14 +5,10 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Item", menuName = "New Item/item")]
 public class Item : ScriptableObject  // 게임 오브젝트에 붙일 필요 X 
 {
-    public enum ItemType  // 아이템 유형
-    {
-        food
-       
-    }
+  
 
     public string itemName; // 아이템의 이름
-    public ItemType itemType; // 아이템 유형
+    public string itemType; // 아이템 유형
     public Sprite itemImage; // 아이템의 이미지(인벤 토리 안에서 띄울)
  
 

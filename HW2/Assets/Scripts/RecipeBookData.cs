@@ -5,13 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "RecipeBookData", menuName = "RecipeBook/RecipeBookData")]
 public class RecipeBookData : ScriptableObject
 {
-    [SerializeField] private List<Recipe> recipes = new List<Recipe>();
-    public List<Recipe> Recipes { get => recipes; }
+    [SerializeField] private List<RecipeData> recipes = new List<RecipeData>();
+    public List<RecipeData> Recipes { get => recipes; }
 
-    public void Add (RecipeData recipeData)
+    public void Add (RecipeData newData)
     {
-        recipes.Add(new Recipe(recipeData));
-        Debug.Log(Recipes[0].RecipeData.RecipeName);
+        
+        recipes.Add(newData);
+
+        Debug.Log(Recipes[0].RecipeName);
 
     }
    

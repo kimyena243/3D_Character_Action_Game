@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498550240fb879346b37f38cb75fda1b, type: 3}
   m_Name: RBTest
   m_EditorClassIdentifier: 
-  recipes: []
+  recipes:
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
+  - {fileID: 11400000, guid: 6f57fa5ef3735b44e810be7690108585, type: 2}
