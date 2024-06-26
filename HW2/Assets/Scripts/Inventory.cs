@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
- 
+
+    [SerializeField]  private InventoryData inventoryData;
+    public InventoryData InventoryData { get => inventoryData; }
+
     [SerializeField]
     private GameObject go_SlotsParent;  // Slot들의 부모인 Grid Setting 
 
@@ -21,9 +24,9 @@ public class Inventory : MonoBehaviour
        
     }
  
-    public void AcquireItem(Item _item)
+    public void AcquireItem(ItemData _item)
     {
-
+        InventoryData.Add(_item);
 
         for (int i = 0; i < slots.Length; i++)
         {

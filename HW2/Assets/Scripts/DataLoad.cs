@@ -4,8 +4,8 @@ using UnityEngine;
 using System.IO;
 public class DataLoad : MonoBehaviour
 {
-    [SerializeField] private List<Item> items;
-    public List<Item> Items { get => items; }
+    [SerializeField] private List<ItemData> items;
+    public List<ItemData> Items { get => items; }
 
 void Start()
     {
@@ -23,9 +23,9 @@ void Start()
        
     }
 
-    List<Item> ParseCSV(string csvText)
+    List<ItemData> ParseCSV(string csvText)
     {
-        List<Item> items = new List<Item>();
+        List<ItemData> items = new List<ItemData>();
         StringReader reader = new StringReader(csvText);
         bool isFirstLine = true;
 
@@ -39,7 +39,7 @@ void Start()
             }
 
             string[] fields = line.Split(',');
-            Item item = new Item
+            ItemData item = new ItemData
             {
                 itemType = fields[0],
                 itemName = fields[1]

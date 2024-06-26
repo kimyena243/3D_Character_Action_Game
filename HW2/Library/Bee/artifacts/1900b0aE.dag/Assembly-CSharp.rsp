@@ -377,7 +377,7 @@
 "Assets/Scripts/InventoryData.cs"
 "Assets/Scripts/Item.cs"
 "Assets/Scripts/ItemClick.cs"
-"Assets/Scripts/ItemPickUp.cs"
+"Assets/Scripts/ItemData.cs"
 "Assets/Scripts/Monster.cs"
 "Assets/Scripts/MonsterHit.cs"
 "Assets/Scripts/MoveFloor.cs"
