@@ -21,6 +21,7 @@ public class RecipeBook : MonoBehaviour
 
     void Start()
     {
+      
         slots = go_SlotsParent.GetComponentsInChildren<RecipeUI>();
         //시작할 때 레시피 이미지 흑백으로 띄우기
         for (int i = 0; i < slots.Length; i++)
